@@ -1,9 +1,10 @@
 import React from "react";
 
 const Card = ({pokemon}) => {
+  const {name, picture} = pokemon
   return <div>
-    <p>Name: {pokemon.name}</p>
-    <img src={pokemon.picture} alt={pokemon.name} />
+    <p>Name: {name}</p>
+    <img src={picture} alt={name} />
   </div>;
 };
 
