@@ -7,7 +7,7 @@ const ListaPokemon = (props) => {
     return props.pokemon.map((poke, i) => <Card pokemon={poke} key={i}></Card>)
   }
 
-  return <Fragment>{paintCards()}</Fragment>;
+  return <>{paintCards()}</>;
 };
 
 export default ListaPokemon;

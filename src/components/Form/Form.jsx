@@ -2,17 +2,18 @@ import React from "react";
 
 const Form = (props) => {
   
-  const handleSubmit = e => {
+  const handleChange = e => {
     e.preventDefault();
-    props.searchPokemon(e.target.pokename.value)
-    document.getElementById('pokedex').reset()
+    props.searchPokemon(e.target.value)
+    // document.getElementById('pokedex').reset()
   }
 
   return <div>
-    <form onSubmit={handleSubmit} id="pokedex">
+    <form id="pokedex">
       <label htmlFor="pokename">PokeName: </label>
-      <input type="text" name="pokename"/>
-      <input type="submit" value={'Search'}/>
+      {/* El onchange va en el input porque es el capo que selecciono */}
+      <input onChange={handleChange} type="text" name="pokename"/> 
+      {/* <input type="submit" value={'Search'}/> */}
   </form>
   </div>
 };
