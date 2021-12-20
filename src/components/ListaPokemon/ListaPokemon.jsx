@@ -1,7 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Card from '../Card/Card'
 
-const ListaPokemon = () => {
-  return <div>ListaPokemon</div>;
+const ListaPokemon = (props) => {
+
+  const paintCards = () => {
+    return props.pokemon.map((poke, i) => <Card pokemon={poke} key={i}></Card>)
+  }
+
+  return <Fragment>{paintCards()}</Fragment>;
 };
 
 export default ListaPokemon;

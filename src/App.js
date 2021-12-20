@@ -7,7 +7,7 @@ import ListaPokemon from './components/ListaPokemon/ListaPokemon'
 function App() {
 
   const [value, setValue] = useState('');
-  const [pokemon, setPokemon] = useState({});
+  const [pokemon, setPokemon] = useState([]);
 
   const searchPokemon = (value) =>{
     setValue(value)
@@ -23,7 +23,7 @@ function App() {
           'name': pokeName,
           'picture': json.sprites.front_default
         }
-        setPokemon(poke)
+        setPokemon([...pokemon, poke])
       } catch (error) {
         console.log('error', error)
       }
