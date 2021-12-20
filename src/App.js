@@ -2,7 +2,7 @@ import './App.css';
 import axios from 'axios';
 import React, {useState, useEffect } from "react";
 import Form from './components/Form/Form';
-import Card from './components/Card/Card'
+import ListaPokemon from './components/ListaPokemon/ListaPokemon'
 
 function App() {
 
@@ -34,7 +34,7 @@ function App() {
   return (
     <div className="App">
       <Form searchPokemon={searchPokemon} />
-      <Card pokemon={pokemon}></Card>
+      <ListaPokemon pokemon={pokemon}></ListaPokemon>
     </div>
   );
 }
