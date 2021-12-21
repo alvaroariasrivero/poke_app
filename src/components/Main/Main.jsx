@@ -1,4 +1,5 @@
 import React from "react";
+import {Routes, Route} from 'react-router-dom';
 import Form from '../Form/Form';
 import ListaPokemon from '../ListaPokemon/ListaPokemon';
 
@@ -6,8 +7,10 @@ import ListaPokemon from '../ListaPokemon/ListaPokemon';
 const Main = () => {
   
   return <main>
-        <Form/>
-        <ListaPokemon/>
+      <Routes>
+        <Route path='/' element={<ListaPokemon/>}/>
+        <Route path='/search' element={<Form/>}/>
+      </Routes>
     </main>;
 };      
 
