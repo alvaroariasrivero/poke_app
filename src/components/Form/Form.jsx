@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { pokeContext } from '../../context/pokecontext';
 
-const Form = (props) => {
+const Form = () => {
   
+  const {searchPokemon} = useContext(pokeContext);
+
   const handleChange = e => {
     e.preventDefault();
-    props.searchPokemon(e.target.value)
+    searchPokemon(e.target.value)
     // document.getElementById('pokedex').reset()
   }
 
