@@ -1,9 +1,11 @@
 import './App.css';
 import axios from 'axios';
 import React, {useState, useEffect } from "react";
-import Form from './components/Form/Form';
-import ListaPokemon from './components/ListaPokemon/ListaPokemon';
+// import Form from './components/Form/Form';
+// import ListaPokemon from './components/ListaPokemon/ListaPokemon';
+import Main from './components/Main'
 import { useDebounce } from 'use-debounce';
+import { pokeContext } from './context/pokecontext';
 
 function App() {
 
@@ -37,10 +39,18 @@ function App() {
     fetchPoke();
   }, [pokeValue])
 
+  const pokeObj = {
+    pokemon,
+    searchPokemon
+  }
+
   return (
     <div className="App">
-      <Form searchPokemon={searchPokemon} />
-      <ListaPokemon pokemon={pokemon}/>
+      {/* Siempre hay que poner value para el context */}
+      <pokeContext.Provider value={pokeObj}>
+        <Main/>
+      </pokeContext.Provider>
+
     </div>
   );
 }

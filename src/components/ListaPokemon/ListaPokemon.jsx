@@ -1,10 +1,13 @@
-import React, { Fragment } from "react";
+import React, { useContext } from "react";
+import { pokeContext } from '../../context/pokecontext';
 import Card from '../Card/Card'
 
-const ListaPokemon = (props) => {
+const ListaPokemon = () => {
+
+  const {pokemon} = useContext(pokeContext);
 
   const paintCards = () => {
-    return props.pokemon.map((poke, i) => <Card pokemon={poke} key={i}></Card>)
+    return pokemon.map((poke, i) => <Card pokemon={poke} key={i}></Card>)
   }
 
   return <>{paintCards()}</>;
