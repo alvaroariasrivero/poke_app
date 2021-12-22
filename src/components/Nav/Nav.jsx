@@ -4,8 +4,9 @@ import {Link} from 'react-router-dom';
 const Nav = () => {
   return <nav>
     <ul>
-      <Link to='/'>PokéList</Link>
-      <Link to='/search'>PokéSearch</Link>
+      <li><Link to='/list'>PokéList</Link></li>
+      <li><Link to='/search'>PokéSearch</Link></li>
+      <li><Link to='/create'>Create Pokémon</Link></li>
     </ul>
   </nav>;
 };

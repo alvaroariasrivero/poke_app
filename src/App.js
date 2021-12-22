@@ -19,6 +19,10 @@ function App() {
     setValue(value)
   }
 
+  const createPoke = (value) => {
+    setPokemon([...pokemon, value])
+  }
+
   useEffect(() => {
     async function fetchPoke() {
       if(pokeValue.length > 0){
@@ -49,7 +53,8 @@ function App() {
   const pokeObj = {
     pokemon,
     lastPoke,
-    searchPokemon
+    searchPokemon,
+    createPoke
   }
 
   return (
