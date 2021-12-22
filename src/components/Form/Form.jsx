@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { pokeContext } from '../../context/pokecontext';
 import Card from "../Card/Card";
+import './Form.css'
 
 const Form = () => {
   
@@ -17,8 +18,8 @@ const Form = () => {
   }
 
   return <div>
-    <form id="pokedex" onSubmit={handleSubmit}>
-      <label htmlFor="pokename">PokeName: </label>
+    <form id="pokedex" onSubmit={handleSubmit} className="search">
+      <label htmlFor="pokename">PokéName: </label>
       {/* El onchange va en el input porque es el capo que selecciono */}
       <input onChange={handleChange} type="text" name="pokename"/> 
       <Card pokemon={lastPoke}/>

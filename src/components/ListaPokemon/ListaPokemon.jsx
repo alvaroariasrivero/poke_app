@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { pokeContext } from '../../context/pokecontext';
-import Card from '../Card/Card'
+import Card from '../Card/Card';
+import './ListaPokemon.css'
 
 const ListaPokemon = () => {
 
@@ -10,7 +11,7 @@ const ListaPokemon = () => {
     return pokemon.map((poke, i) => <Card pokemon={poke} key={i}></Card>)
   }
 
-  return <>{paintCards()}</>;
+  return <div className="lista">{paintCards()}</div>;
 };
 
 export default ListaPokemon;
