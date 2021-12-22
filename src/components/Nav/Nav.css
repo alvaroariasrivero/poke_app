@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+.cabecera{
+    align-items: center;
+    padding: 0.5rem;
+}
+
+ul{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Bangers', cursive;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: #F0EF11;
+    text-shadow: 2px 2px #141414;
+    padding: 0 2rem;
+    font-size: 2rem;
+}
+
+.pokeball{
+    width: 6.25rem;
+    margin-top: 0.31rem;
+}
+
+.title{
+    font-family: 'Bangers', cursive;
+    font-size: 3.5rem;
+    color: #F0EF11;
+    text-shadow: 2px 2px #141414;
+    padding: 0.5rem;
+}
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
