@@ -1,0 +1,21 @@
+.picture{
+    width: 4.688em;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #B9F0C5;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #87826D;
+}
+
+#pokedex{
+    margin-bottom: 5.7rem;
+}

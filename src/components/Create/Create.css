@@ -1,0 +1,37 @@
+.create{
+    width: 50%;
+    margin: 0 auto;
+    background-color: #B9F0C5;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #87826D;
+}
+
+.create *{
+    padding: 0.485rem;
+}
+
+label{
+    color: #2A2B2A;
+    font-family: 'Bangers', cursive;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #F00000 0%, #DC281E  51%, #F00000  100%)
+}
+
+.btn-grad {
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+}
+
+.btn-grad:hover {
+background-position: right center;
+color: #fff;
+text-decoration: none;
+cursor: pointer;
+}
