@@ -1,3 +1,3 @@
 # PokéApp
 
-https://cocky-boyd-fbeacb.netlify.app/create
+https://cocky-boyd-fbeacb.netlify.app/
