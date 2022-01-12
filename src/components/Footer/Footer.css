@@ -4,6 +4,6 @@ footer{
     color: #F0EF11;
     padding: 0.65rem;
     bottom: 0;
-    margin-top: 2rem;
-    position: relative;
+    position:fixed;
+    width: 100%;
 }
